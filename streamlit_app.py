@@ -801,7 +801,7 @@ if selected == "Project":
 
         #st.dataframe(YT_df)
 	
-       col1,col2,col3=st.columns(3)
+        col1,col2,col3=st.columns(3)
 	with col1:
 		"""
         	Dataset Created on [Kaggle](https://www.kaggle.com/")
