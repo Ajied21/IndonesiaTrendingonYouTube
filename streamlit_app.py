@@ -804,7 +804,7 @@ if selected == "Project":
         col1,col2,col3=st.columns(3)
         with col1:
 		"""
-        	Dataset Created on [Kaggle](https://www.kaggle.com/")
+		Dataset Created on [Kaggle](https://www.kaggle.com/")
         	"""
         with col2:
 		f"""
