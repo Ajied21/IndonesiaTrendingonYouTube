@@ -799,26 +799,28 @@ if selected == "Project":
 
         st.markdown("<h3 style='text-align: center;color:black'>Data Trends Video on Youtube in 2021</h3>", unsafe_allow_html=True)
 
-        st.dataframe(YT_df)
+        #st.dataframe(YT_df)
+	
+	col1,col2,col3=st.columns(3)
+	with col1:
+		"""
+        	Dataset Created on [Kaggle](https://www.kaggle.com/")
+        	"""
+	with col2:
+		f"""
+        	[![GitHub Repo watchers](https://img.shields.io/github/watchers/Ajied21/IndonesiaTrendingonYouTubein2021?style=social)][gh]
 
-        """
-        Dataset Created on [Kaggle](https://www.kaggle.com/")
-        """
-
-        f"""
-        [![GitHub Repo watchers](https://img.shields.io/github/watchers/Ajied21/IndonesiaTrendingonYouTubein2021?style=social)][gh]
-
-        [gh]: https://github.com/Ajied21/IndonesiaTrendingonYouTube
-        
-        """
-        st.download_button(
-        label="Download CSV",
-        data=YT_df.to_csv(),
-        file_name='Youtubetrend.csv',
-        mime='text/csv',
-        )
-
-        st.markdown("<h6 style='text-align: center'>Copyright &copy; 2022</h6>", unsafe_allow_html=True)
+        	[gh]: https://github.com/Ajied21/IndonesiaTrendingonYouTube
+        	"""
+	with col3:
+		st.download_button(
+		label="Download Data (CSV)",
+		data=YT_df.to_csv(),
+		file_name='Youtubetrend.csv',
+		mime='text/csv',
+		)
+	
+	st.markdown("<h6 style='text-align: center'>Copyright &copy; 2022</h6>", unsafe_allow_html=True)
 
 #Columns Contact
 
