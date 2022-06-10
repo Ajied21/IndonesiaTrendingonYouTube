@@ -802,24 +802,25 @@ if selected == "Project":
         #st.dataframe(YT_df)
 	
         col1,col2,col3=st.columns(3)
-	with col1:
+        with col1:
 		"""
         	Dataset Created on [Kaggle](https://www.kaggle.com/")
         	"""
-	with col2:
+        with col2:
 		f"""
         	[![GitHub Repo watchers](https://img.shields.io/github/watchers/Ajied21/IndonesiaTrendingonYouTubein2021?style=social)][gh]
 
         	[gh]: https://github.com/Ajied21/IndonesiaTrendingonYouTube
+		
         	"""
-	with col3:
+        with col3:
 		st.download_button(
 		label="Download Data (CSV)",
 		data=YT_df.to_csv(),
 		file_name='Youtubetrend.csv',
 		mime='text/csv',
 		)
-	
+		
 	st.markdown("<h6 style='text-align: center'>Copyright &copy; 2022</h6>", unsafe_allow_html=True)
 
 #Columns Contact
